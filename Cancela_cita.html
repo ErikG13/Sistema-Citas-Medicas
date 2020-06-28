@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styleMenu.css">
+
+    <title>Cancelaci&oacute;n</title>
+</head>
+<body class="back">
+    <header id="BarMenu">
+        <h3>¡Bienvenido al sistema administrador de citas!</h3>
+        <nav class="div">
+            <table id="tabla">
+                <tr>
+                    <td>Contactanos</td>
+                    <td>F.A.Q.</td>
+                    <td>Menu</td>
+                    <td>Cerrar sesion</td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+    <form action="./PHP/Cancela_Cita.php" method="post">
+    <table>
+        <tr>
+            <td><input type="radio" name="opc" id="af" value="1">Afiliado</td>
+            <td><input type="radio" name="opc" id="a" value="2">Familiar Afiliado</td>
+        </tr>
+        <tr>
+            <td>Folio</td>
+            <td><input type="text" name="folio" id="folio" value=""></td>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td><input type="text" name="nombre" id="nombre" value=""></td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="Cancelar"></td>
+            <td><input type="submit" value="Cancelar Cita"></td>
+        </tr>
+    </table>
+    </form>
+    
+</body>
+</html>

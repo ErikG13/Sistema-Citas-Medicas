@@ -1,0 +1,63 @@
+#headTitulo{
+    text-align: center;
+    background-color: royalblue;
+    padding: 100px;
+    height: 90px;
+    -webkit-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+    box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+}
+#title{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: blanchedalmond;
+}
+#title{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: blanchedalmond;
+}
+#centro
+{
+    padding: 20px;
+}
+
+#familiar
+{
+    visibility: hidden;
+}
+#afiliado{
+    visibility: hidden;
+}
+
+.formulario{
+    background-color: royalblue;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    left: 480px;
+    top: 400px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+.back{
+    background-image: url('../images/background.jpg');
+    background-size: 100%, 130px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+    box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+
+}
+#cita
+{
+    background-color: salmon;
+    width: 120px;
+    border-color: salmon;
+    height: 50px;
+    border-radius: 20px;
+}

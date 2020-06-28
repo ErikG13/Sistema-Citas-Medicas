@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/sytleMF.css">
+    <script src="./JS/chooseOption.js"></script>
+    <title>Medico familiar</title>
+</head>
+<body class="back">
+    <header id="headTitulo">
+        <h3 id="title">Hospital "Los Angeles"</h3>
+        <h4 id="subtittle">Consultorio Medico Familiar</h4>
+    </header>
+    <center id="centro">
+        <form name="ELIGE">
+            <tr>
+            <td><input type="radio" name="opcion" value="F">Familiar del afiliado</td>
+            <td><input type="radio" name="opcion" value="FA">Afiliado</td>
+            </tr>
+            <tr>
+                <td align="center"><input id="cita" type="button" value="Cita" onclick="FormularioF()"></td>
+            </tr>
+        </form>
+    </center>
+
+    <form class="formulario" id="familiar" action="./PHP/inserta_f.php" method="post">
+        <table id="tabla">
+            <tr>
+                <td>NSS del afiliado</td>
+                <td><input type="text" name="NSSaf" id="NSSaf"></td>
+            </tr>
+            <tr>
+                <td>NSS del paciente</td>
+                <td><input type="text" name="NSSpa" id="NSSpa"></td>
+            </tr>
+            <tr>
+                <td>Nombre familiar</td>
+                <td><input type="text" name="nombre" id="nombre"></td>
+                <td>Apellido familiar</td>
+                <td><input type="text" name="apellido" id="apellido"></td>
+            </tr>
+            <tr>
+                <td>Fecha</td>
+                <td><input type="date" name="fecha" id="fecha"></td>
+            </tr>
+            <tr>
+                <td>Hora</td>
+                <td><input type="time" name="hora" id="hora"></td>
+            </tr>
+            <tr>
+                <td>N&uacute;mero de consultorio</td>
+                <td><input type="text" name="consultorio" id="consultorio"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Nconsultorio" id="Nconsultorio" value="Familiar"></td>
+            </tr>
+            <tr>
+                <td class="CITA"><input type="submit" value="Generar Cita"></td>
+                <td><input type="reset" value="Cancelar"></td>
+            </tr>
+        </table>
+    </form>    
+
+    <form class="formulario" id="afiliado" action="./PHP/inserta_af.php" method="POST">
+        <table>
+            <tr>
+                <td>NSS afiliado</td>
+                <td><input type="text" name="nss" id="nss"></td>
+            </tr>
+            <tr>
+                <td>Fecha</td>
+                <td><input type="date" name="fecha" id="fecha"></td>
+            </tr>
+            <tr>
+                <td>Hora</td>
+                <td><input type="time" name="hora" id="hora"></td>
+            </tr>
+            <tr>
+                <td>N&uacute;mero de consultorio</td>
+                <td><input type="text" name="consultorio" id="consultorio"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Nconsultorio" id="Nconsultorio" value="Familiar"></td>
+            </tr>
+            <tr>
+                <td class="CITA"><input type="submit" value="Generar Cita"></td>
+                <td><input type="reset" value="Cancelar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

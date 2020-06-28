@@ -1,0 +1,51 @@
+#nav{
+    text-align: center;
+    background-color: royalblue;
+    padding: 100px;
+    height: 90px;
+    -webkit-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+    box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+}
+#title{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: blanchedalmond;
+}
+#div{
+    background-color: chocolate;
+    display: inline-block;
+    text-align: center;
+    height: 250px;
+    height: auto;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 50px;
+    -webkit-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+    box-shadow: 6px 6px 5px -1px rgba(0,0,0,0.58);
+    top: 200px;
+    left: 450px;
+    position: absolute;
+}
+.back{
+    background-image: url('../images/background.jpg');
+    background-size: 100%, 130px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+#BtnIngresar
+{
+    background-color: green;
+    text-align: center;
+    color: whitesmoke;
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+    border-color: green;
+    border-radius: 115px;
+    width: 220px;
+    height: 60px;
+}

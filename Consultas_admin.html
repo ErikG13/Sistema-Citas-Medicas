@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styleMenu.css">
+    <title>Consultas</title>
+</head>
+<body class="back">
+    <header id="BarMenu">
+        <h3>¡Bienvenido al sistema administrador de citas!</h3>
+        <nav class="div">
+            <table id="tabla">
+                <tr>
+                    <td>Contactanos</td>
+                    <td>F.A.Q.</td>
+                    <td>Menu</td>
+                    <td>Cerrar sesion</td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+    <div>
+        <h3>Reporte de consultas general</h3>
+        <form action="./PHP/reporteCitasGral.php" method="post">
+            <table>
+                <tr><td><input type="submit" value="Obtener"></td></tr>
+            </table>
+        </form>
+    </div>
+    <div>
+        <h3>Consultar paciente</h3>
+        <form action="./PHP/reportePaciente.php" method="post">
+            <table>
+                <tr>
+                    <td>Afiliado</td>
+                    <td>
+                        <input type="radio" name="opc" id="opc" value="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Familiar</td>
+                    <td>
+                        <input type="radio" name="opc" id="opc" value="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Folio</td>
+                    <td><input type="text" name="folio" id="folio"></td>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="nombre" id="nombre"></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Cancelar"></td>
+                    <td><input type="submit" value="Consultar"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

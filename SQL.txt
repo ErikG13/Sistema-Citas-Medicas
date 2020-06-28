@@ -1,0 +1,31 @@
+create database Hospital_Angeles;
+
+use Hospital_Angeles;
+
+create table user(id_user int NOT NULL auto_increment,
+	nombre varchar(25),
+	apPaterno varchar(25),
+	apMaterno varchar(25),
+	user varchar(26),
+	pass varchar(25),
+	NSS int,
+	edad int,
+	telefono int,
+	PRIMARY KEY (id_user));
+
+create table admin(id_admin int NOT NULL auto_increment,
+	nombre varchar(25),
+	apPaterno varchar(25),
+	apMaterno varchar(25),
+	user varchar(25),
+	pass varchar(10),
+	permisos int,
+	PRIMARY KEY (id_admin));
+
+create table citas(folio int NOT NULL auto_increment,
+	id_user int,
+	NSS int,
+	fecha_cita date,
+	hora datetime,
+	id_admin int,
+	PRIMARY KEY (folio));
